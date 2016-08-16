@@ -1,0 +1,10 @@
+use gestta;
+sh.enableSharding('gestta');
+db.createCollection('department');
+db.createCollection('user');
+db.createCollection('customer');
+db.createCollection('task');
+sh.shardCollection('gestta.department', { company: 1 }, true);
+sh.shardCollection('gestta.user', { company: 1 }, true);
+sh.shardCollection('gestta.customer', { company: 1 }, true);
+sh.shardCollection('gestta.task', { company: 1 }, true);

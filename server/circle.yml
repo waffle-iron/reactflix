@@ -1,0 +1,21 @@
+machine:
+  node:
+    version: 6.3.0
+  environment:
+    mongo__host: localhost
+
+dependencies:
+  pre:
+    - npm install -g mocha
+
+test:
+  override:
+    - npm test
+
+deployment:
+  qa:
+    branch: qa
+    commands:
+      - docker login -e $DOCKER_HUB_EMAIL -u $DOCKER_HUB_USERNAME -p $DOCKER_HUB_PASSWORD
+      - docker build -t gestta/gestta:$CIRCLE_BRANCH-1.0.$CIRCLE_BUILD_NUM
+      - docker push gestta/gestta:$CIRCLE_BRANCH-1.0.$CIRCLE_BUILD_NUM

@@ -1,0 +1,25 @@
+{
+  "app": {
+    "port": 9001
+  },
+  "logentries" : {
+    "token" : "d3e08d4d-8faa-4056-a465-0021ccaf4775"
+  },
+  "mongo": {
+    "host": "docker",
+    "database": "gestta",
+    "database_audit": "gestta-audit",
+    "options": {
+      "server": {
+        "auto_reconnect"    : true,
+        "poolSize"          : 10,
+        "reconnectTries"    : 5,
+        "reconnectInterval" : 2000
+      }
+    }
+  },
+  "email" : "test@gestta.com.br",
+  "jwt": {
+    "secret" : "senha super secreta!"
+  }
+}
