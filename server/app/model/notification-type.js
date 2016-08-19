@@ -1,6 +1,0 @@
-module.exports = {
-  TASK_INFO   : 'TASK_INFO',
-  TRANSFER    : 'TRANSFER',
-  PARTICIPATE : 'PARTICIPATE',
-  MENTION     : 'MENTION'
-};

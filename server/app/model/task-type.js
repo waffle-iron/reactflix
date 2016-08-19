@@ -1,5 +1,0 @@
-module.exports = {
-  RECURRENT      : 'RECURRENT',
-  SERVICE_ORDER  : 'SERVICE_ORDER',
-  ACCOUNTING     : 'ACCOUNTING'
-};

@@ -3,7 +3,10 @@
     "port": 9001
   },
   "logentries" : {
-    "token" : "d3e08d4d-8faa-4056-a465-0021ccaf4775"
+    "token" : "x"
+  },
+  "newreliac" : {
+    "token" : ""
   },
   "mongo": {
     "host": "docker",
@@ -18,7 +21,15 @@
       }
     }
   },
-  "email" : "test@gestta.com.br",
+  "aws" : {
+    "s3" : {
+      "region" : "us-east-1"
+    },
+    "sqs" : {
+      "region" : "us-east-1"
+    }
+  },
+  "email" : "noreply-qa@gestta.com.br",
   "jwt": {
     "secret" : "senha super secreta!"
   }

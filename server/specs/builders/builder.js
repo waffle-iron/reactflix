@@ -62,7 +62,7 @@ class Scenario extends AbstractScenario {
   _user(name, company, role, departments) {
     let params = {
       name, email: `${name}@${company.name}.com`.toLowerCase(),
-      password: bcrypt.hashSync(name),
+      password: '$2a$06$Hf0w4kcenRCikFO4EE8XuOQszR7qj6Inh5oJMb7Y/ejXQNUBZipWq',
       departments,
       role,
       company: company._id

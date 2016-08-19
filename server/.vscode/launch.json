@@ -1,0 +1,61 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceRoot}/server.js",
+      "stopOnEntry": false,
+      "args": [],
+      "cwd": "${workspaceRoot}",
+      "preLaunchTask": null,
+      "runtimeExecutable": null,
+      "runtimeArgs": [
+        "--nolazy"
+      ],
+      "env": {
+        "NODE_ENV"   : "development",
+        "PROPERTIES" : "./config/env/dev.json"
+      },
+      "externalConsole": false,
+      "sourceMaps": false,
+      "outDir": null
+    },
+    {
+      "name": "Launch-QA",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceRoot}/server.js",
+      "stopOnEntry": false,
+      "args": [],
+      "cwd": "${workspaceRoot}",
+      "preLaunchTask": null,
+      "runtimeExecutable": null,
+      "runtimeArgs": [
+        "--nolazy"
+      ],
+      "env": {
+        "NODE_ENV"   : "qa",
+        "PROPERTIES" : "./config/env/dev.json",
+        "AWS_ACCESS_KEY_ID" : "AKIAJ6PYIJP6L4LCSP2A",
+        "AWS_SECRET_ACCESS_KEY" : "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"
+      },
+      "externalConsole": false,
+      "sourceMaps": false,
+      "outDir": null
+    },
+    {
+      "name": "Attach",
+      "type": "node",
+      "request": "attach",
+      "port": 5858,
+      "address": "localhost",
+      "restart": false,
+      "sourceMaps": false,
+      "outDir": null,
+      "localRoot": "${workspaceRoot}",
+      "remoteRoot": null
+    }
+  ]
+}

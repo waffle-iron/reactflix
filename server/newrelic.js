@@ -10,7 +10,7 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name: ['reactflix'],
+  app_name: ['gestta'],
   /**
    * Your New Relic license key.
    */

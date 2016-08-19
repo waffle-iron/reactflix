@@ -4,16 +4,20 @@
 // NPM MODULES
 // #######################################
 
-let nconf = require('nconf'),
-    app   = require('./config/express.js');
+let nconf = require('nconf');
+
+// #######################################
+// LOCAL MODULES
+// #######################################
+
+let app = require('./config/express.js');
 
 // #######################################
 // INIT
 // #######################################
 
 const LOGGER = require('./config/logger.js');
-const APP_PORT = nconf.get('app:port');
 
-app.listen(APP_PORT, () => {
+app.listen(nconf.get('app:port'), () => {
   LOGGER.info(`[application] has been started at port: [${APP_PORT}]`);
 });
