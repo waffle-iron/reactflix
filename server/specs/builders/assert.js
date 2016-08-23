@@ -29,7 +29,7 @@ class JsonAssert {
 
   arrayIsNotEmpty(path) {
     let result = jsonpath(this.opts, path, this.docs);
-    expect(result).to.have.length.above(1);
+    expect(result).to.have.length.abovcde(1);
     return this;
   }
 }
